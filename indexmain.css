@@ -1,0 +1,109 @@
+/* General Reset and Base Styles */
+body {
+    font-family: 'Arial', sans-serif; /* Use a common font, consider others like 'Roboto' or 'Open Sans' */
+    margin: 0;
+    padding: 20px;
+    background-color: #f7f7f7; /* Light gray background */
+    color: #333; /* Dark gray text color */
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1024px; /* slightly larger max width */
+    margin: 0 auto;
+    padding: 10px; /* Add some padding on the sides */
+}
+
+/* Service Row Styles */
+.service-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+    gap: 20px; /* Space between service cards */
+    justify-content: center; /* Align items in the center */
+}
+
+/* Service Card Styles */
+.service-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08); /* More subtle shadow */
+    flex: 1 1 300px; /* Flexible width for larger screens */
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.3s ease; /* Smooth hover effect */
+    position: relative; /* Needed for the border overlay effect */
+}
+
+.service-card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Slightly increased shadow on hover */
+}
+
+.service-card img {
+    width: 100%;
+    max-height: 250px; /* Increased image height */
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px; /* Increased margin below image */
+}
+
+.service-card h3 {
+    margin-top: 0;
+    font-size: 1.3em; /* Slightly larger heading */
+    color: #222;
+    font-weight: 600; /* More prominent heading */
+    line-height: 1.2; /* Adjust heading line-height*/
+}
+
+.service-card p {
+    margin: 8px 0;
+    font-size: 1em;
+    color: #555;
+    flex-grow: 1; /* Description takes up available space */
+}
+
+.service-card .price {
+    font-weight: 700;
+    margin-top: 15px;
+    color: #3e8e7e; /* Primary color */
+    font-size: 1.1em; /* Increased price font size*/
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    .service-card {
+        min-width: 100%; /* Full width cards on smaller screens */
+    }
+
+    .service-row {
+         gap: 15px;
+    }
+
+    body {
+      padding: 10px;
+     }
+}
+
+/* Border Overlay on Hover Effect */
+.service-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 2px solid transparent; /* Initially transparent */
+  border-radius: 10px;
+  transition: border-color 0.3s ease; /* Smooth transition */
+  pointer-events: none; /* Important: Allows hover on card */
+  z-index: 1; /* Ensure it's above background */
+}
+
+.service-card:hover::before {
+  border-color: #3e8e7e; /* Set border color on hover*/
+}
