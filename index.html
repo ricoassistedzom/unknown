@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Services - Fiverr Style</title>
+    <style>
+        /* Basic CSS for layout */
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 20px; /* Adjust padding for content spacing */
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 960px; /* Max width for content */
+            margin: 0 auto;
+        }
+        .service-row {
+            display: flex;
+            flex-wrap: wrap; /* Allows wrapping on smaller screens */
+            margin-bottom: 20px;
+            gap: 20px; /* Space between service cards */
+        }
+        .service-card {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            flex: 1 1 280px; /* Flexible size for cards */
+            min-width: 280px; /* Minimum card width */
+            display: flex;
+            flex-direction: column;
+        }
+
+        .service-card img {
+            width: 100%;
+            max-height: 200px; /* Adjust height as needed */
+            object-fit: cover;
+            border-radius: 6px;
+            margin-bottom: 10px;
+        }
+        .service-card h3 {
+            margin-top: 0; /* Remove default heading margin */
+            font-size: 1.2em;
+        }
+        .service-card p {
+            margin: 5px 0;
+            font-size: 0.95em;
+            flex-grow: 1; /* Allow description to take available space */
+        }
+        .service-card .price {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+      
+      /* Responsive behavior */
+        @media (max-width: 768px) {
+            .service-card{
+            min-width:100%;
+            }
+        }
+      
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Start of Row 1 (max 3 cards) -->
+        <div class="service-row">
+            <div class="service-card">
+                <img src="[YOUR_IMAGE_URL_1]" alt="Service 1">
+                <h3>Engaging Blog Posts & Articles</h3>
+                <p>I will create SEO-friendly and engaging blog posts on various topics.</p>
+                <div class="price">Starting at $50</div>
+            </div>
+             <div class="service-card">
+                <img src="[YOUR_IMAGE_URL_2]" alt="Service 2">
+                 <h3>Comprehensive Editing for Clarity</h3>
+                <p>I will edit your documents for grammar, clarity, and flow.</p>
+               <div class="price">Starting at $30</div>
+            </div>
+             <div class="service-card">
+                <img src="[YOUR_IMAGE_URL_3]" alt="Service 3">
+                 <h3>Fast & Accurate Proofreading</h3>
+                <p>I will do a final check for any errors before you publish your content.</p>
+                <div class="price">Starting at $20</div>
+            </div>
+        </div>
+         <!-- End of Row 1 -->
+     <!-- Start of Row 2 (max 3 cards) -->
+        <div class="service-row">
+              <div class="service-card">
+                <img src="[YOUR_IMAGE_URL_4]" alt="Service 4">
+                <h3>Persuasive Sales Copywriting</h3>
+                 <p>I will write convincing sales copy to drive conversions for your business.</p>
+                <div class="price">Starting at $75</div>
+            </div>
+            <div class="service-card">
+                <img src="[YOUR_IMAGE_URL_5]" alt="Service 5">
+                <h3>Manuscript Editing & Refinement</h3>
+                 <p>I will refine your manuscript for a polished and professional feel.</p>
+               <div class="price">Starting at $100</div>
+            </div>
+              <div class="service-card">
+                <img src="[YOUR_IMAGE_URL_6]" alt="Service 6">
+                <h3>Spotless Grammar & Spelling Check</h3>
+                 <p>I will ensure your documents are free of all grammatical and spelling errors.</p>
+                 <div class="price">Starting at $15</div>
+            </div>
+        </div>
+        <!-- End of Row 2 -->
+        
+        <!-- Start of Row 3 (max 3 cards) -->
+        <div class="service-row">
+            <div class="service-card">
+                <img src="[YOUR_IMAGE_URL_7]" alt="Service 7">
+                 <h3>Technical Writing and Guides</h3>
+                 <p>I will write clear and concise technical documents and user guides.</p>
+                <div class="price">Starting at $60</div>
+            </div>
+             <div class="service-card">
+                 <img src="[YOUR_IMAGE_URL_8]" alt="Service 8">
+                 <h3>Academic Paper Editing</h3>
+                 <p>I will edit academic papers for clarity, correctness, and style.</p>
+                <div class="price">Starting at $80</div>
+             </div>
+              <div class="service-card">
+                 <img src="[YOUR_IMAGE_URL_9]" alt="Service 9">
+                 <h3>Proofreading for Web Content</h3>
+                 <p>I will proofread your website content for a professional presentation.</p>
+                <div class="price">Starting at $25</div>
+             </div>
+       </div>
+        <!-- End of Row 3 -->
+
+        <!-- Start of Row 4 (max 3 cards) -->
+        <div class="service-row">
+            <div class="service-card">
+                <img src="[YOUR_IMAGE_URL_10]" alt="Service 10">
+                 <h3>Professional Resumes & Cover Letters</h3>
+                 <p>I will create professional resumes and cover letters to help you land a job.</p>
+                <div class="price">Starting at $40</div>
+            </div>
+             <div class="service-card">
+                 <img src="[YOUR_IMAGE_URL_11]" alt="Service 11">
+                 <h3>Substantive Editing for Flow</h3>
+                 <p>I will edit your writing for better structure, flow, and readability.</p>
+                <div class="price">Starting at $60</div>
+             </div>
+              <div class="service-card">
+                 <img src="[YOUR_IMAGE_URL_12]" alt="Service 12">
+                 <h3>Thorough Proofreading Services</h3>
+                 <p>I will thoroughly check for errors on any type of document.</p>
+                <div class="price">Starting at $20</div>
+             </div>
+       </div>
+        <!-- End of Row 4 -->
+
+         <!-- Start of Row 5 (max 3 cards) -->
+        <div class="service-row">
+            <div class="service-card">
+                <img src="[YOUR_IMAGE_URL_13]" alt="Service 13">
+                 <h3>Creative Content for Social Media</h3>
+                 <p>I will create unique and engaging social media content for your brand.</p>
+                <div class="price">Starting at $30</div>
+            </div>
+             <div class="service-card">
+                 <img src="[YOUR_IMAGE_URL_14]" alt="Service 14">
+                 <h3>Business Document Editing</h3>
+                 <p>I will ensure all your business documents are well-written and error free</p>
+                <div class="price">Starting at $50</div>
+             </div>
+              <div class="service-card">
+                 <img src="[YOUR_IMAGE_URL_15]" alt="Service 15">
+                 <h3>Final Polish for Documents</h3>
+                 <p>I will give your documents a final polish to make sure everything is perfect.</p>
+                <div class="price">Starting at $20</div>
+             </div>
+       </div>
+        <!-- End of Row 5 -->
+         <!-- Start of Row 6 (max 3 cards) -->
+        <div class="service-row">
+            <div class="service-card">
+                <img src="[YOUR_IMAGE_URL_16]" alt="Service 16">
+                 <h3>Ghostwriting for eBooks & Articles</h3>
+                 <p>I will write your content for you, without taking credit.</p>
+                <div class="price">Starting at $150</div>
+            </div>
+             <div class="service-card">
+                 <img src="[YOUR_IMAGE_URL_17]" alt="Service 17">
+                 <h3>SEO Editing for Optimization</h3>
+                 <p>I will edit your content to improve SEO and drive more traffic.</p>
+                <div class="price">Starting at $50</div>
+             </div>
+              <div class="service-card">
+                 <img src="[YOUR_IMAGE_URL_18]" alt="Service 18">
+                 <h3>Detailed Proofreading for Accuracy</h3>
+                 <p>I will ensure all the details are correct and accurate in your document.</p>
+                <div class="price">Starting at $25</div>
+             </div>
+       </div>
+        <!-- End of Row 6 -->
+         <!-- Start of Row 7 (max 3 cards) -->
+        <div class="service-row">
+            <div class="service-card">
+                <img src="[YOUR_IMAGE_URL_19]" alt="Service 19">
+                 <h3>Script for Videos & Podcasts</h3>
+                 <p>I will write scripts for your video and podcast content.</p>
+                <div class="price">Starting at $80</div>
+            </div>
+             <div class="service-card">
+                 <img src="[YOUR_IMAGE_URL_20]" alt="Service 20">
+                 <h3>Fiction Editing for Pacing</h3>
+                 <p>I will edit your fiction work to ensure a captivating plot.</p>
+                <div class="price">Starting at $100</div>
+             </div>
+              <div class="service-card">
+                 <img src="[YOUR_IMAGE_URL_21]" alt="Service 21">
+                 <h3>Attention to Detail Proofreading</h3>
+                 <p>I will pay special attention to every small detail.</p>
+                <div class="price">Starting at $30</div>
+             </div>
+       </div>
+        <!-- End of Row 7 -->
+         <!-- Start of Row 8 (max 3 cards) -->
+        <div class="service-row">
+            <div class="service-card">
+                <img src="[YOUR_IMAGE_URL_22]" alt="Service 22">
+                 <h3>Speechwriting for Any Occasion</h3>
+                 <p>I will write speeches for you, whether it's a formal or a casual event.</p>
+                <div class="price">Starting at $70</div>
+            </div>
+             <div class="service-card">
+                 <img src="[YOUR_IMAGE_URL_23]" alt="Service 23">
+                 <h3>ESL Document Editing</h3>
+                 <p>I will edit your documents for clarity if English is not your native language.</p>
+                <div class="price">Starting at $60</div>
+             </div>
+              <div class="service-card">
+                 <img src="[YOUR_IMAGE_URL_24]" alt="Service 24">
+                 <h3>Proofreading for Academic Papers</h3>
+                 <p>I will proofread your academic papers for errors.</p>
+                <div class="price">Starting at $25</div>
+             </div>
+       </div>
+        <!-- End of Row 8 -->
+         <!-- Start of Row 9 (max 3 cards) -->
+        <div class="service-row">
+            <div class="service-card">
+                <img src="[YOUR_IMAGE_URL_25]" alt="Service 25">
+                 <h3>Grant Proposals & Funding Requests</h3>
+                 <p>I will help you write compelling grant and funding requests.</p>
+                <div class="price">Starting at $120</div>
+            </div>
+             <div class="service-card">
+                 <img src="[YOUR_IMAGE_URL_26]" alt="Service 26">
+                <h3>Fact Checking for Articles</h3>
+                <p>I will make sure your writing is free of all factual errors.</p>
+                <div class="price">Starting at $40</div>
+             </div>
+              <div class="service-card">
+                 <img src="[YOUR_IMAGE_URL_27]" alt="Service 27">
+                <h3>Proofreading for Business Content</h3>
+                <p>I will proofread all your business content for a professional look.</p>
+                <div class="price">Starting at $25</div>
+             </div>
+       </div>
+        <!-- End of Row 9 -->
+    </div>
+</body>
+</html>
